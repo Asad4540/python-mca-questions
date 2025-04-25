@@ -1,19 +1,18 @@
-# string = input("enter a string : ")
-# print("reverse string is :" + string[::-1])
+# string = input("enter a string")
+# print(string[::-1])
 
-def str_rev():
-    string = input("enter a string : ")
-    result= " "
-    
-    words = " "
-    for i in string:
-        if i == " " :
-            words = i + words 
-        # else:
-        #     print("----")
-         
-str_rev()   
+def stringRev():
+    userInput = input("enter a string : ")
+    words = userInput.split()
+    revWords = [word[::-1] for word in words]
+    result=' '.join(revWords)
+    return result
 
+str = stringRev()
+print("Output : ",str)
     
     
+    
+    
+
 

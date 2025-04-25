@@ -1,7 +1,7 @@
 n = int(input("How many elements do you want to enter? "))
 user_set= set()
 
-print("etner each element one by one")
+print("enter each element one by one")
 for _ in range(n):
     ch = input("enter element : ")
     if len(ch) == 1:
